@@ -32,7 +32,7 @@ public class RetirarVehiculo extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(this);
         setIconImage(getIconImage());
-        sql.mostrarJ(cbxPLaca);
+        sql.mostrarJ1(cbxPLaca);
 
     }
 

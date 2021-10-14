@@ -84,16 +84,16 @@ public class MenuPrincipal extends javax.swing.JFrame implements Runnable{
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         btnsalir = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         lblcodigo5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         lblfecha = new javax.swing.JLabel();
         lblhora = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
         MenuBar = new javax.swing.JMenuBar();
         MOpciones = new javax.swing.JMenu();
         MCRUD = new javax.swing.JMenu();
@@ -136,9 +136,9 @@ public class MenuPrincipal extends javax.swing.JFrame implements Runnable{
         jPanel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(111, 174, 2), 4, true));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/portal.gif"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/LOGOTIPO1.0.jpeg"))); // NOI18N
         jLabel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(111, 174, 2), 4, true));
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 60, -1, 240));
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 70, 200, 170));
 
         btnsalir.setBackground(new java.awt.Color(0, 0, 0));
         btnsalir.setFont(new java.awt.Font("Engravers MT", 1, 12)); // NOI18N
@@ -152,32 +152,12 @@ public class MenuPrincipal extends javax.swing.JFrame implements Runnable{
                 btnsalirActionPerformed(evt);
             }
         });
-        jPanel2.add(btnsalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 400, 119, -1));
-
-        jLabel2.setFont(new java.awt.Font("Engravers MT", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(111, 174, 2));
-        jLabel2.setText("BRYAN IDROVO");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 370, 150, 30));
-
-        jLabel4.setFont(new java.awt.Font("Engravers MT", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(111, 174, 2));
-        jLabel4.setText("ARIEL AGUIRRE");
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 340, 160, 30));
-
-        jLabel5.setFont(new java.awt.Font("Engravers MT", 1, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(111, 174, 2));
-        jLabel5.setText("JUAN MATUTE");
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 400, 140, 30));
+        jPanel2.add(btnsalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 340, 119, -1));
 
         lblcodigo5.setFont(new java.awt.Font("Engravers MT", 3, 36)); // NOI18N
         lblcodigo5.setForeground(new java.awt.Color(111, 174, 2));
         lblcodigo5.setText("PARKING PROJECT");
-        jPanel2.add(lblcodigo5, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 10, 490, 50));
-
-        jLabel6.setFont(new java.awt.Font("Engravers MT", 1, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(111, 174, 2));
-        jLabel6.setText("pedro cabrera");
-        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 310, 170, 30));
+        jPanel2.add(lblcodigo5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 490, 50));
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         jPanel1.setOpaque(false);
@@ -206,15 +186,14 @@ public class MenuPrincipal extends javax.swing.JFrame implements Runnable{
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(16, 16, 16))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblhora, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblfecha, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(lblhora, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblfecha, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -230,7 +209,29 @@ public class MenuPrincipal extends javax.swing.JFrame implements Runnable{
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel2.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 240, 90));
+        jPanel2.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 20, 240, 90));
+
+        jTextArea1.setEditable(false);
+        jTextArea1.setBackground(new java.awt.Color(0, 0, 0));
+        jTextArea1.setColumns(20);
+        jTextArea1.setForeground(new java.awt.Color(111, 174, 2));
+        jTextArea1.setRows(5);
+        jTextArea1.setText("\n-JOSE DANIEL MURILLO MAYANCELA\n-BRAYAN ALEXIS IDROBO CELI\n-PEDRO SEBASTIAN CABRERA LOJANO\n");
+        jTextArea1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "AUTORES", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 18), new java.awt.Color(111, 174, 2))); // NOI18N
+        jScrollPane1.setViewportView(jTextArea1);
+
+        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 250, 310, 130));
+
+        jTextArea2.setEditable(false);
+        jTextArea2.setBackground(new java.awt.Color(0, 0, 0));
+        jTextArea2.setColumns(20);
+        jTextArea2.setForeground(new java.awt.Color(111, 174, 2));
+        jTextArea2.setRows(5);
+        jTextArea2.setText("EMAIL... \n-pedro.cabrera.est@tecazuay.edu.ec\n-jose.murillo.est@tecazuay.edu.ec\n-brayan.idrobo.est@tecazuay.edu.ec\n\nTELEFONO...\n- +593 988787152\n\nDIRECCION POSTAL\nAZUAY 010110\n\n");
+        jTextArea2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "CONTACTOS", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 18), new java.awt.Color(111, 174, 2))); // NOI18N
+        jScrollPane2.setViewportView(jTextArea2);
+
+        jPanel2.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 130, 310, 250));
 
         MenuBar.setBackground(new java.awt.Color(0, 0, 0));
         MenuBar.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(111, 174, 2), 4, true));
@@ -497,11 +498,11 @@ public class MenuPrincipal extends javax.swing.JFrame implements Runnable{
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 1200, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 999, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 422, Short.MAX_VALUE)
         );
 
         pack();
@@ -645,10 +646,6 @@ public class MenuPrincipal extends javax.swing.JFrame implements Runnable{
     public static javax.swing.JMenu asignavehiculos;
     private javax.swing.JButton btnsalir;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JMenu jMenu1;
@@ -657,6 +654,10 @@ public class MenuPrincipal extends javax.swing.JFrame implements Runnable{
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPopupMenu jPopupMenu1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea2;
     private javax.swing.JLabel lblcodigo5;
     private javax.swing.JLabel lblfecha;
     private javax.swing.JLabel lblhora;

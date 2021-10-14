@@ -319,4 +319,23 @@ public class MetodoSQLVehiculos {
         }
        
     }
+    public void mostrarJ1(JComboBox placas) {
+       
+        PreparedStatement St;
+        String SQL = "SELECT numero_placa from estacionamiento";
+//        String SQLDELETE = "SELECT nombre||' '||apellido AS NOMAPE from personas";
+        try {
+            St = con.Conectarse().prepareStatement(SQL);
+            rst=St.executeQuery();
+              while (rst.next()) {
+                placas.addItem(rst.getString("numero_placa"));
+                
+
+            }
+            
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, "ERROR EN LA SENTENCIA", "SQL", JOptionPane.ERROR_MESSAGE);
+        }
+       
+    }
 }

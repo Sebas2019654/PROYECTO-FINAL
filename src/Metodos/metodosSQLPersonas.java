@@ -325,7 +325,7 @@ public class metodosSQLPersonas {
 
             PS = con.Conectarse().prepareStatement(sql);
             rst = PS.executeQuery();
-            OutputStream file = new FileOutputStream(new File("C:\\Users\\suco0\\OneDrive\\Escritorio\\Reporte de Personas.pdf"));
+            OutputStream file = new FileOutputStream(new File("src\\reportes\\Reporte de Personas.pdf"));
             Document document = new Document();
             PdfWriter.getInstance(document, file);
             document.open();
@@ -363,7 +363,7 @@ public class metodosSQLPersonas {
             document.close();
             file.close();
             try {
-                File archivo = new File("C:\\Users\\suco0\\OneDrive\\Escritorio\\Reporte de Personas.pdf");
+                File archivo = new File("src\\reportes\\Reporte de Personas.pdf");
                 Desktop.getDesktop().open(archivo);
             } catch (Exception e) {
                 e.printStackTrace();
@@ -387,7 +387,7 @@ public class metodosSQLPersonas {
 
             PS = con.Conectarse().prepareStatement(sql);
             rst = PS.executeQuery();
-            OutputStream file = new FileOutputStream(new File("C:\\Users\\suco0\\OneDrive\\Escritorio\\Informe Semanal.pdf"));
+            OutputStream file = new FileOutputStream(new File("src\\reportes\\Informe Semanal.pdf"));
             Document document = new Document();
             PdfWriter.getInstance(document, file);
             document.open();
@@ -432,7 +432,7 @@ public class metodosSQLPersonas {
             document.close();
             file.close();
             try {
-                File archivo = new File("C:\\Users\\suco0\\OneDrive\\Escritorio\\Informe Semanal.pdf");
+                File archivo = new File("src\\reportes\\Informe Semanal.pdf");
                 Desktop.getDesktop().open(archivo);
             } catch (Exception e) {
                 e.printStackTrace();

@@ -59,7 +59,6 @@ public class Login extends javax.swing.JFrame {
         lblminimizar = new javax.swing.JLabel();
         btnCerrar = new javax.swing.JButton();
         lblcodigo5 = new javax.swing.JLabel();
-        lblcodigo7 = new javax.swing.JLabel();
         jcboxMostarPass = new javax.swing.JCheckBox();
         lblFondo = new javax.swing.JLabel();
 
@@ -211,13 +210,8 @@ public class Login extends javax.swing.JFrame {
 
         lblcodigo5.setFont(new java.awt.Font("Engravers MT", 3, 36)); // NOI18N
         lblcodigo5.setForeground(new java.awt.Color(111, 174, 2));
-        lblcodigo5.setText("WELCOME TO THE FUTURE!");
-        jPanel1.add(lblcodigo5, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 420, 720, 50));
-
-        lblcodigo7.setFont(new java.awt.Font("Engravers MT", 3, 34)); // NOI18N
-        lblcodigo7.setForeground(new java.awt.Color(111, 174, 2));
-        lblcodigo7.setText("SUCESS IS NEVER GIVEN, IT'S EARNED!");
-        jPanel1.add(lblcodigo7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 950, 40));
+        lblcodigo5.setText("FINAL PROJECT!!!");
+        jPanel1.add(lblcodigo5, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 420, 460, 50));
 
         jcboxMostarPass.setBackground(new java.awt.Color(0, 0, 0));
         jcboxMostarPass.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
@@ -357,7 +351,6 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel lblPu;
     private javax.swing.JLabel lblPu1;
     private javax.swing.JLabel lblcodigo5;
-    private javax.swing.JLabel lblcodigo7;
     private javax.swing.JLabel lblminimizar;
     private javax.swing.JLabel lblpassword;
     private javax.swing.JLabel lbluser;
